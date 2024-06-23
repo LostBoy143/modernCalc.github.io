@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Calculator</title>
+    <link
+      rel="stylesheet"
+      href="calculator.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <input id="display" readonly />
+      <div class="elements">
+        <div class="numeric">
+          <div class="rows el">
+            <div
+              class="inputs"
+              onclick="display('7')"
+            >
+              7
+            </div>
+            <div
+              class="inputs"
+              onclick="display('8')"
+            >
+              8
+            </div>
+            <div
+              class="inputs"
+              onclick="display('9')"
+            >
+              9
+            </div>
+          </div>
+
+          <div class="rows el">
+            <div
+              class="inputs"
+              onclick="display('4')"
+            >
+              4
+            </div>
+            <div
+              class="inputs"
+              onclick="display('5')"
+            >
+              5
+            </div>
+            <div
+              class="inputs"
+              onclick="display('6')"
+            >
+              6
+            </div>
+          </div>
+
+          <div class="rows el">
+            <div
+              class="inputs"
+              onclick="display('1')"
+            >
+              1
+            </div>
+            <div
+              class="inputs"
+              onclick="display('2')"
+            >
+              2
+            </div>
+            <div
+              class="inputs"
+              onclick="display('3')"
+            >
+              3
+            </div>
+          </div>
+          <div class="rows el">
+            <div
+              class="inputs"
+              onclick="display('0')"
+            >
+              0
+            </div>
+            <div
+              class="inputs"
+              onclick="display('.')"
+            >
+              .
+            </div>
+            <div
+              class="inputs"
+              onclick="calculate()"
+              id="equal-sign"
+            >
+              =
+            </div>
+          </div>
+        </div>
+        <div class="symbols">
+          <div
+            id="del"
+            class="sym-elements inputs"
+            onclick="clearScreen()"
+          >
+            DEL
+          </div>
+          <div
+            class="sym-elements inputs"
+            onclick="display('/')"
+          >
+            /
+          </div>
+          <div
+            class="sym-elements inputs"
+            onclick="display('*')"
+          >
+            *
+          </div>
+          <div
+            class="sym-elements inputs"
+            onclick="display('-')"
+          >
+            -
+          </div>
+          <div
+            class="sym-elements inputs"
+            onclick="display('+')"
+          >
+            +
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
