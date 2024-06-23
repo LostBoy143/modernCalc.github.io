@@ -22,6 +22,7 @@ body {
   padding: 15px;
   border: 1px solid white;
   background-color: rgba(31, 30, 30, 0.422);
+
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -36,7 +37,7 @@ body {
   font-size: 3rem;
   border-radius: 20px;
   outline: none;
-  color: white;
+  color: black;
 }
 .elements {
   height: 80%;
@@ -86,6 +87,10 @@ body {
   background-color: rgb(59, 58, 58);
   color: white;
 }
+.inputs:focus {
+  background-color: transparent; /* Change to your desired background color */
+  outline: none; /* Removes the blue outline */
+}
 #equal-sign {
   background-color: rgb(87, 87, 177);
 }
@@ -120,8 +125,8 @@ body {
 
 @media only screen and (max-width: 600px) {
   .container {
-    width: 250px;
-    height: 400px;
+    width: 300px;
+    height: 500px;
     border: 5px solid rgb(31, 30, 30);
     paadding: 5px;
   }
@@ -155,5 +160,9 @@ body {
   }
   .numeric {
     margin-top: 10px;
+  }
+  .inputs:hover,
+  .sym-elements:hover {
+    background-color: none;
   }
 }
